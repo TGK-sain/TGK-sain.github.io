@@ -162,25 +162,44 @@
 <p>9、移动文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /temp/movefile /targetFolder</span><br></pre></td></tr></table></figure></p>
 <p>10、重命名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv oldNameFile newNameFile</span><br></pre></td></tr></table></figure></p>
 <p>11、切换用户<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su -username</span><br></pre></td></tr></table></figure></p>
-<p>12、修改文件权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 file.java //file.java的权限-rwxrwxrwx，r表示读、w表示写、x表示可执行</span><br></pre></td></tr></table></figure></p>
-<p>13、压缩文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czf test.tar.gz /test1 /test2</span><br></pre></td></tr></table></figure></p>
-<p>14、列出压缩文件列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -tzf test.tar.gz</span><br></pre></td></tr></table></figure></p>
-<p>15、解压文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf test.tar.gz</span><br></pre></td></tr></table></figure></p>
-<p>16、查看文件头10行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -n 10 example.txt</span><br></pre></td></tr></table></figure></p>
-<p>17、查看文件尾10行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -n 10 example.txt</span><br></pre></td></tr></table></figure></p>
-<p>18、查看日志类型文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f exmaple.log //这个命令会自动显示新增内容，屏幕只显示10行内容的（可设置）。</span><br></pre></td></tr></table></figure></p>
-<p>19、使用超级管理员身份执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm a.txt 使用管理员身份删除文件</span><br></pre></td></tr></table></figure></p>
-<p>20、查看端口占用情况<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tln | grep 8080 查看端口8080的使用情况</span><br></pre></td></tr></table></figure></p>
-<p>21、查看端口属于哪个程序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsof -i :8080</span><br></pre></td></tr></table></figure></p>
-<p>22、查看进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps aux|grep java 查看java进程</span><br><span class="line">ps aux 查看所有进程</span><br></pre></td></tr></table></figure></p>
-<p>23、以树状图列出目录的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tree a</span><br><span class="line">ps:Mac下使用tree命令</span><br></pre></td></tr></table></figure></p>
-<p>24、 文件下载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://file.tgz mac下安装wget命令</span><br><span class="line">curl http://file.tgz</span><br></pre></td></tr></table></figure></p>
-<p>25、网络检测<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping www.just-ping.com</span><br></pre></td></tr></table></figure></p>
-<p>26、远程登录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh userName@ip</span><br></pre></td></tr></table></figure></p>
-<p>27、打印信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $JAVA_HOME 打印java home环境变量的值</span><br></pre></td></tr></table></figure></p>
-<p>28、java 常用命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java javac jps ,jstat ,jmap, jstack</span><br></pre></td></tr></table></figure></p>
-<p>29、其他命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn git maven</span><br></pre></td></tr></table></figure></p>
-<p>28、linux命令学习网站:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">explainshell.com/</span><br></pre></td></tr></table></figure></p>
+<p>12、修改文件权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 file.java //file.java的权限-rwxrwxrwx，r表示读、w表示写、x表示可执行</span><br></pre></td></tr></table></figure>
+<p>13、压缩文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czf test.tar.gz /test1 /test2</span><br></pre></td></tr></table></figure>
+<p>14、列出压缩文件列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -tzf test.tar.gz</span><br></pre></td></tr></table></figure>
+<p>15、解压文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf test.tar.gz</span><br></pre></td></tr></table></figure>
+<p>16、查看文件头10行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -n 10 example.txt</span><br></pre></td></tr></table></figure>
+<p>17、查看文件尾10行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -n 10 example.txt</span><br></pre></td></tr></table></figure>
+<p>18、查看日志类型文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f exmaple.log //这个命令会自动显示新增内容，屏幕只显示10行内容的（可设置）。</span><br></pre></td></tr></table></figure>
+<p>19、使用超级管理员身份执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm a.txt 使用管理员身份删除文件</span><br></pre></td></tr></table></figure>
+<p>20、查看端口占用情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tln | grep 8080 查看端口8080的使用情况</span><br></pre></td></tr></table></figure>
+<p>21、查看端口属于哪个程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsof -i :8080</span><br></pre></td></tr></table></figure>
+<p>22、查看进程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps aux|grep java 查看java进程</span><br><span class="line">ps aux 查看所有进程</span><br></pre></td></tr></table></figure>
+<p>23、以树状图列出目录的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tree a</span><br><span class="line">ps:Mac下使用tree命令</span><br></pre></td></tr></table></figure>
+<p>24、 文件下载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://file.tgz mac下安装wget命令</span><br><span class="line">curl http://file.tgz</span><br></pre></td></tr></table></figure>
+<p>25、网络检测</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping www.just-ping.com</span><br></pre></td></tr></table></figure>
+<p>26、远程登录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh userName@ip</span><br></pre></td></tr></table></figure>
+<p>27、打印信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $JAVA_HOME 打印java home环境变量的值</span><br></pre></td></tr></table></figure>
+<p>28、java 常用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java javac jps ,jstat ,jmap, jstack</span><br></pre></td></tr></table></figure>
+<p>29、其他命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn git maven</span><br></pre></td></tr></table></figure>
+<p>28、linux命令学习网站:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">explainshell.com/</span><br></pre></td></tr></table></figure>
 
     </div>
     <hr />
